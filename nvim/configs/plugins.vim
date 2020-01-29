@@ -51,8 +51,11 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Custom start page
 Plug 'mhinz/vim-startify'
 
-" Vim Javascript
+" web dev *shudders*
 Plug 'pangloss/vim-javascript'
+Plug 'othree/html5.vim'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'ap/vim-css-color'
 
 " Language Packs
 Plug 'sheerun/vim-polyglot'
@@ -87,7 +90,7 @@ Plug 'junegunn/goyo.vim'
 " LaTeX support
 Plug 'lervag/vimtex'
 
-" Wal theme
+" space-vim theme
 Plug 'dylanaraps/wal.vim'
 Plug 'deviantfero/wpgtk.vim'
 
@@ -96,5 +99,23 @@ Plug 'voldikss/vim-translator'
 
 " Markdown Preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+
+"A llows viewing contents of register from " or @ in normal mode and Ctrl R in insert mode
+Plug 'junegunn/vim-peekaboo'
+
+ " A personal wiki for Vim
+ Plug 'vimwiki/vimwiki'
+
+ " todo addon for vimwiki
+ Plug 'tbabej/taskwiki'
+
+ " Color support for charts
+ Plug 'powerman/vim-plugin-AnsiEsc'
+
+ " taskwiki file navigation
+ Plug 'majutsushi/tagbar'
+
+ " taskwarrior support for vimwiki
+ Plug 'farseer90718/vim-taskwarrior'
 
 call plug#end()

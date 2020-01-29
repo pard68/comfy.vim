@@ -1,4 +1,8 @@
 {
+	"$schema": "http://json-schema.org/draft-06/schema",
+	"description": "Configuration file for coc.nvim",
+	"additionalProperties": false,
+	"coc.preferences.formatOnSaveFiletypes": ["css", "Markdown", "javascript", "html"],
   "coc.preferences.colorSupport": true,
   "diagnostic.refreshOnInsertMode": true,
   "diagnostic.hintSign": "ღ",
@@ -15,7 +19,6 @@
   "list.source.files.defaultOptions": ["--auto-preview"],
   "list.source.outline.defaultOptions": ["--auto-preview"],
   //prettier
-  "coc.preferences.formatOnSaveFiletypes": ["css"],
   "prettier.statusItemText": "★ ",
   "prettier.eslintIntegration": true,
   "prettier.tslintIntegration": true,
@@ -84,6 +87,23 @@
     }
   },
   "java.errors.incompleteClasspath.severity": "ignore",
+  //cSpell
+	"cSpell.enabledLanguageIds": [
+		"csharp",
+		"go",
+		"javascript",
+		"javascriptreact",
+		"markdown", "md",
+		"php",
+		"plaintext",
+		"typescript",
+		"typescriptreact",
+		"yml",
+		"vimwiki"
+  ],
+  "cSpell.userWords": [
+    "chonmag"
+  ],
 
 
 }

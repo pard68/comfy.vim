@@ -59,6 +59,35 @@ vnoremap <Leader>Al :left<CR>
 vnoremap <Leader>Ac :center<CR>
 vnoremap <Leader>Ar :right<CR>
 
+" Hard Mode: Unmap arrow keys
+no <down> <Nop>
+no <up> <Nop>
+no <left> <Nop>
+no <right> <Nop>
+ino <down> <Nop>
+ino <up> <Nop>
+ino <left> <Nop>
+ino <right> <Nop>
+vno <down> <Nop>
+vno <up> <Nop>
+vno <left> <Nop>
+vno <right> <Nop>
+
+nmap <leader>y "+y<CR>
+nmap <leader>p "+o<CR>
+
+" stop highlighting search results
+nnoremap <leader><space> :nohlsearch<CR>
+
+" Insert date/time stamps
+nmap <leader>d :put =strftime('%Y/%m/%d')<CR>
+nmap <leader>d- :put =strftime('%Y-%m-%d')<CR>
+nmap <leader>d. :put =strftime('%Y.%m.%d')<CR>
+nmap <leader>t :put =strftime('%T')<CR>
+nmap <leader>dt :put =strftime('%Y/%m/%d - %T (%Z)')<CR>
+nmap <leader>d-t :put =strftime('%Y-%m-%d - %T (%Z)')<CR>
+nmap <leader>d.t :put =strftime('%Y.%m.%d - %T (%Z)')<CR>
+
 "***********************************************************************************
 
 " Plugin specific keybinds
