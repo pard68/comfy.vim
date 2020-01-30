@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/ascii.png", width="600", height="400", title="vim.reaper"/>
+  <img src="/scrot.png", width="600", height="400", title="comfy.vim"/>
 </p>
 
 <p align="center">💀 A Hackable, Fully Featured, Rice Friendly Neovim Configuration 💀</p>
@@ -10,16 +10,6 @@
   <a href="#usage">Usage</a> •
   <a href="#required-tools">Required Tools</a>
   <br>
-  <br>
-  <a href="https://github.com/gideonwolfe/vim.reaper/stargazers">
-    <img src="https://img.shields.io/github/stars/gideonwolfe/vim.reaper.svg?style=flat-square&logo=hackaday"/>
-  </a>
-  <a href="https://github.com/gideonwolfe/vim.reaper/commits/master">
-    <img src="https://img.shields.io/github/last-commit/gideonwolfe/vim.reaper.svg?style=flat-square&logo=vim"/>
-  </a>
-
-<p align="center">
-  <img src="https://stars.medv.io/GideonWolfe/vim.reaper.svg", title="commits"/>
 </p>
 
 
@@ -51,7 +41,7 @@
 
 The `update_config.sh` script simply copies the `nvim` folder into your `$HOME/.config` directory. This script can also be used to update configurations that you have modified or have been updated from git.
 
-Before installing for the first time, go into the `vim.reaper/nvim` directory and run `nvim -u init.vim`. This will tell neovim to launch using this configuration file. This lets you fully get everything up and running before you commit to puting it in `.config`. Back up any old configs!
+Before installing for the first time, go into the `comfy.vim/nvim` directory and run `nvim -u init.vim`. This will tell neovim to launch using this configuration file. This lets you fully get everything up and running before you commit to puting it in `.config`. Back up any old configs!
 
 # Usage
 
@@ -302,12 +292,3 @@ These must be installed to make use of all the awesome features
 - `neovim` python module from pip
 - [lazydocker](https://github.com/jesseduffield/lazydocker) for TUI docker management
 - [lazygit](https://github.com/jesseduffield/lazygit) for TUI git management
-
-# Notes
-
-vim.reaper is only part of a balanced linux diet. Check out my dotfiles for more ricing goodness. Please feel free to let me know about any errors, or create PRs that expand the configuration or make it more robust on different systems.
-
-<p align=center>
-  <a href="https://gideonwolfe.com">
-    <img src="https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg"/>
-</p>

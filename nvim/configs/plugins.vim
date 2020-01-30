@@ -91,7 +91,13 @@ Plug 'junegunn/goyo.vim'
 Plug 'lervag/vimtex'
 
 " dracula theme
-Plug 'dracula/vim', { 'as': 'dracula' }
+" Plug 'dracula/vim', { 'as': 'dracula' }
+
+" forest night theme
+Plug 'sainnhe/vim-color-forest-night'
+
+" Tmuxline.vim, sync tmux and vim lines
+Plug 'edkolev/tmuxline.vim'
 
 " Translator
 Plug 'voldikss/vim-translator'
