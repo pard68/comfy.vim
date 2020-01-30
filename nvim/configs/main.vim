@@ -143,3 +143,9 @@ set foldmethod=indent
 
 " Set whitepsace characters
 set list listchars=eol:┑,tab:›‐,trail:~,extends:>,precedes:<
+
+" netrw
+let g:netrw_home=$XDG_CACHE_HOME.'/vim'
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_altv = 1

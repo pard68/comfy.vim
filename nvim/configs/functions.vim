@@ -94,3 +94,14 @@ function! WordCount()
         return b:wordcount
     endif
 endfunction
+
+" fzf search netrw history
+function! MyUniq(lst)
+    return filter(a:lst, 'count(a:lst, v:val) == 1')
+endfunction
+command! -bang Netrwhist call fzf#run(fzf#wrap('netrw_dirhist',
+    \ {'source': 
+    \ !exists('g:netrw_dirhist_cnt')
+    \   ?"tail -n +3 ".g:netrw_home.".netrwhist | cut -d \"'\" -f2- | rev | cut -d \"'\" -f2- | rev | awk '!seen[$0]++'"
+    \   :MyUniq(map(range(1,g:netrw_dirhist_cnt), 'g:netrw_dirhist_{v:val}'))
+    \ }, <bang>0))

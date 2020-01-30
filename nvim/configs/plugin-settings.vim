@@ -60,34 +60,6 @@ let g:vista#renderer#enable_icon = 1
 let g:vista_sidebar_width = 50
 
 """"""""""""
-"NerdTree  "
-""""""""""""
-" if nerdtree is only window, kill nerdtree so buffer can die
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | :bdelete | endif
-map <F7> :NERDTreeToggle<CR>
-let nerdtreequitonopen = 0
-let NERDTreeShowHidden=1
-let nerdchristmastree=1
-let g:NERDTreeMinimalUI = 1
-let g:nerdtreewinsize = 25
-let g:NERDTreeDirArrowExpandable = '▷'
-let g:NERDTreeDirArrowCollapsible = '▼'
-let NERDTreeAutoCenter=1
-let g:NERDTreeIndicatorMapCustom = {
-        \ "modified"  : "✹",
-        \ "staged"    : "✚",
-        \ "untracked" : "✭",
-        \ "renamed"   : "➜",
-        \ "unmerged"  : "═",
-        \ "deleted"   : "✖",
-        \ "dirty"     : "✗",
-        \ "clean"     : "✔︎",
-        \ 'ignored'   : '☒',
-        \ "unknown"   : "?"
-        \ }
-
-
-""""""""""""
 "Airline   "
 """"""""""""
 "main settings
@@ -134,6 +106,16 @@ let g:airline#extensions#branch#format = 2
 
 
 """""""""""""
+"tmuxline   "
+"""""""""""""
+
+if exists('$TMUX')
+  au InsertEnter * Tmuxline airline_insert
+  au InsertLeave * Tmuxline airline
+endif
+
+
+"""""""""""""
 "Devicons   "
 """""""""""""
 let g:webdevicons_enable = 1
@@ -143,7 +125,7 @@ let g:webdevicons_enable_nerdtree = 1
 let g:webdevicons_enable_airline_tabline = 1
 let g:webdevicons_enable_vimfiler = 1
 let g:WebDevIconsUnicodeDecorateFileNodes = 1
-let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+let g:WebDevIconsUnicodeDecorateFolderNodes = 2
 let g:WebDevIconsUnicodeGlyphDoubleWidth = 1
 let g:webdevicons_enable_airline_statusline = 1
 let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
@@ -326,7 +308,7 @@ augroup end
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Better diplay for messages
-set cmdheight=2
+" set cmdheight=2
 
 set updatetime=300
 set shortmess+=c
@@ -346,25 +328,16 @@ augroup Smartf
   autocmd User SmartfLeave :hi Conceal ctermfg=239 guifg=#504945
 augroup end
 
-"""""""""""""""""
-"Nerd Commenter "
-"""""""""""""""""
-" Add spaces after comment delimiters by default
-let g:NERDSpaceDelims = 1
-" Use compact syntax for prettified multi-line comments
-let g:NERDCompactSexyComs = 1
-" Allow commenting and inverting empty lines (useful when commenting a region)
-"
 
 """""""""""""""""
 " Fuzzy Finding "
 """""""""""""""""
 let g:fzf_colors =
-\ { 'fg':      ['bg', 'Normal'],
+\ { 'fg':      ['fg', 'Normal'],
 \ 'bg':      ['bg', 'Normal'],
-\ 'hl':      ['fg', 'Comment'],
+\ 'hl':      ['bg', 'Comment'],
 \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-\ 'bg+':     ['fg', 'CursorLine', 'CursorColumn'],
+\ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
 \ 'hl+':     ['fg', 'Statement'],
 \ 'info':    ['fg', 'PreProc'],
 \ 'border':  ['fg', 'Ignore'],

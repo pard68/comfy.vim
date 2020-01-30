@@ -16,41 +16,90 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
 endif
 call plug#begin('~/.vim/plugged')
 
-" Git wrapper
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-rhubarb'
 
-" Nerd Commenter
-Plug 'scrooloose/nerdcommenter'
-
-" Code Snippets Engine
-" Plug 'SirVer/ultisnips'
-
+"-----------------------------------------------------------------------------
+"-- completions --------------------------------------------------------------
+"-----------------------------------------------------------------------------
 " Snippets for ultisnips
 Plug 'honza/vim-snippets'
-
-" Vim Surround
-Plug 'tpope/vim-surround'
 
 " Auto pairs
 Plug 'jiangmiao/auto-pairs'
 
-" Multiple Cursors
-Plug 'terryma/vim-multiple-cursors'
-
-"" Indent guides
-Plug 'Yggdroot/indentLine'
-
 " COC
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" Smart completion (to work with CoC)
-"Plug 'zxqfl/tabnine-vim'
+" Emoji support
+Plug 'junegunn/vim-emoji'
 
+
+"-----------------------------------------------------------------------------
+"-- display ------------------------------------------------------------------
+"-----------------------------------------------------------------------------
 " Custom start page
 Plug 'mhinz/vim-startify'
 
+" Status bar
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+" forest night theme
+Plug 'sainnhe/vim-color-forest-night'
+
+" Add DevIcons
+Plug 'ryanoasis/vim-devicons'
+
+" goyo distraction free mode
+Plug 'junegunn/goyo.vim'
+
+
+"-----------------------------------------------------------------------------
+"-- file ---------------------------------------------------------------------
+"-----------------------------------------------------------------------------
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-vinegar'
+Plug 'junegunn/fzf.vim'
+
+
+"-----------------------------------------------------------------------------
+"-- git ----------------------------------------------------------------------
+"-----------------------------------------------------------------------------
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-rhubarb'
+
+
+"-----------------------------------------------------------------------------
+"-- qol ----------------------------------------------------------------------
+"-----------------------------------------------------------------------------
+" Comfy scroll
+Plug 'yuttie/comfortable-motion.vim'
+
+" tmux.conf syntax highlighting and other such goodies
+Plug 'tmux-plugins/vim-tmux'
+
+" Vim Surround
+Plug 'tpope/vim-surround'
+
+" Vim session saving
+Plug 'tpope/vim-obsession'
+
+"A llows viewing contents of register from " or @ in normal mode and Ctrl R in insert mode
+Plug 'junegunn/vim-peekaboo'
+
+" Markdown Preview
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+
+" Comment quickly
+Plug 'tpope/vim-commentary'
+
+" Tagbar
+Plug 'liuchengxu/vista.vim'
+
+
+"-----------------------------------------------------------------------------
+"-- syntax -------------------------------------------------------------------
+"-----------------------------------------------------------------------------
 " web dev *shudders*
 Plug 'pangloss/vim-javascript'
 Plug 'othree/html5.vim'
@@ -60,67 +109,38 @@ Plug 'ap/vim-css-color'
 " Language Packs
 Plug 'sheerun/vim-polyglot'
 
-" Status bar
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
-" Tabular auto-align
-Plug 'godlygeek/tabular'
-
-" Comfy scroll
-Plug 'yuttie/comfortable-motion.vim'
-
-" Add DevIcons
-Plug 'ryanoasis/vim-devicons'
-
-" Tagbar
-Plug 'liuchengxu/vista.vim'
-
-" NERDTree
-Plug 'scrooloose/nerdtree', { 'on': [ 'NERDTreeToggle', 'NERDTreeFind' ] }
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
-" Emoji support
-Plug 'junegunn/vim-emoji'
-
-" goyo distraction free mode
-Plug 'junegunn/goyo.vim'
-
 " LaTeX support
 Plug 'lervag/vimtex'
-
-" dracula theme
-" Plug 'dracula/vim', { 'as': 'dracula' }
-
-" forest night theme
-Plug 'sainnhe/vim-color-forest-night'
 
 " Tmuxline.vim, sync tmux and vim lines
 Plug 'edkolev/tmuxline.vim'
 
-" Translator
-Plug 'voldikss/vim-translator'
+"" Indent guides
+Plug 'Yggdroot/indentLine'
 
-" Markdown Preview
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+" Tabular auto-align
+Plug 'godlygeek/tabular'
 
-"A llows viewing contents of register from " or @ in normal mode and Ctrl R in insert mode
-Plug 'junegunn/vim-peekaboo'
+Plug 'tpope/vim-repeat'
 
+
+"-----------------------------------------------------------------------------
+"-- vimwiki ------------------------------------------------------------------
+"-----------------------------------------------------------------------------
  " A personal wiki for Vim
- Plug 'vimwiki/vimwiki'
+Plug 'vimwiki/vimwiki'
 
  " todo addon for vimwiki
- Plug 'tbabej/taskwiki'
+Plug 'tbabej/taskwiki'
 
  " Color support for charts
- Plug 'powerman/vim-plugin-AnsiEsc'
+Plug 'powerman/vim-plugin-AnsiEsc'
 
  " taskwiki file navigation
- Plug 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
 
  " taskwarrior support for vimwiki
- Plug 'farseer90718/vim-taskwarrior'
+Plug 'farseer90718/vim-taskwarrior'
+
 
 call plug#end()
