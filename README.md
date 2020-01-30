@@ -2,7 +2,7 @@
   <img src="/scrot.png", width="600", height="400", title="comfy.vim"/>
 </p>
 
-<p align="center">💀 A Hackable, Fully Featured, Rice Friendly Neovim Configuration 💀</p>
+<p align="center">🛋 A Hackable, Fully Featured, Rice Friendly Neovim Configuration 🛋</p>
 
 <p align="center">
   <a href="#features">Features</a> •
