@@ -91,7 +91,7 @@ let g:NERDTreeIndicatorMapCustom = {
 "Airline   "
 """"""""""""
 "main settings
-let g:airline_theme='wpgtk'
+let g:airline_theme='dracula'
 let g:airline_powerline_fonts = 1
 let g:airline_symbols = {}
 let g:airline_skip_empty_sections = 1

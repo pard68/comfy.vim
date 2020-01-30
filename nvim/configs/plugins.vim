@@ -90,9 +90,8 @@ Plug 'junegunn/goyo.vim'
 " LaTeX support
 Plug 'lervag/vimtex'
 
-" space-vim theme
-Plug 'dylanaraps/wal.vim'
-Plug 'deviantfero/wpgtk.vim'
+" dracula theme
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Translator
 Plug 'voldikss/vim-translator'

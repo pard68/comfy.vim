@@ -10,7 +10,8 @@
 
 
 " Colorscheme
-colorscheme wal
+colorscheme dracula
+set background=dark
 
 augroup specify_filetype
     autocmd!
