@@ -57,8 +57,14 @@ Plug 'junegunn/goyo.vim'
 "-- file ---------------------------------------------------------------------
 "-----------------------------------------------------------------------------
 Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-vinegar'
+"Plug 'tpope/vim-vinegar'
 Plug 'junegunn/fzf.vim'
+
+"Dirvish
+Plug 'justinmk/vim-dirvish'
+Plug 'bounceme/remote-viewer'
+Plug 'kristijanhusak/vim-dirvish-git'
+"Plug 'fsharpasharp/vim-dirvinist'
 
 
 "-----------------------------------------------------------------------------
@@ -96,6 +102,10 @@ Plug 'tpope/vim-commentary'
 " Tagbar
 Plug 'liuchengxu/vista.vim'
 
+" Unimpaired
+Plug 'tpope/vim-unimpaired'
+
+Plug 'bagrat/vim-buffet'
 
 "-----------------------------------------------------------------------------
 "-- syntax -------------------------------------------------------------------

@@ -164,27 +164,6 @@ nnoremap  <Leader>gg  :CocCommand git.toggleGutters<cr>
 nnoremap <silent> <Leader>lg :call ToggleLazyGit()<CR>
 
 
-" NERD Commenter
-" Toggle comments in visual or normal mode
-nnoremap <leader>n :call NERDComment(0,"toggle")<cr>
-vnoremap <leader>n :call NERDComment(1,"toggle")<cr>
-" Toggle a sexy comment
-nnoremap <leader>ns :call NERDComment(0,"sexy")<cr>
-vnoremap <leader>ns :call NERDComment(1,"sexy")<cr>
-" append a  comment
-nnoremap <leader>na :call NERDComment(0,"append")<cr>
-vnoremap <leader>na :call NERDComment(1,"append")<cr>
-" uncomment section
-nnoremap <leader>nu :call NERDComment(0,"uncomment")<cr>
-vnoremap <leader>nu :call NERDComment(1,"uncomment")<cr>
-" invert comments
-nnoremap <leader>ni :call NERDComment(0,"invert")<cr>
-vnoremap <leader>ni :call NERDComment(1,"invert")<cr>
-" comment section
-nnoremap <leader>nc :call NERDComment(0,"comment")<cr>
-vnoremap <leader>nc :call NERDComment(1,"comment")<cr>
-"
-
 " Vista
 " Floating tag finder
 nnoremap  <Leader>ft  :Vista finder coc<cr>
@@ -194,18 +173,6 @@ nmap <F8> :Vista!!<CR>
 
 " Lazydocker
 nnoremap <silent> <Leader>ld :call ToggleLazyDocker()<CR>
-
-" vim-translator
-" Echo translation in the cmdline
-nmap <silent> <Leader>t <Plug>Translate
-vmap <silent> <Leader>t <Plug>TranslateV
-" Display translation in a window
-nmap <silent> <Leader>tw <Plug>TranslateW
-vmap <silent> <Leader>tw <Plug>TranslateWV
-" Replace the text with translation
-nmap <silent> <Leader>tr <Plug>TranslateR
-vmap <silent> <Leader>tr <Plug>TranslateRV
-
 
 " Vimtex
 nmap <silent> <Leader>lc :VimtexCompile<cr>
@@ -218,9 +185,28 @@ nmap <silent> <Leader>lv :VimtexView<cr>
 " Markdown preview
 nmap <Leader>md <Plug>MarkdownPreviewToggle
 
+
+" vim buffest
+nmap <leader>1 <Plug>BuffetSwitch(1)
+nmap <leader>2 <Plug>BuffetSwitch(2)
+nmap <leader>3 <Plug>BuffetSwitch(3)
+nmap <leader>4 <Plug>BuffetSwitch(4)
+nmap <leader>5 <Plug>BuffetSwitch(5)
+nmap <leader>6 <Plug>BuffetSwitch(6)
+nmap <leader>7 <Plug>BuffetSwitch(7)
+nmap <leader>8 <Plug>BuffetSwitch(8)
+nmap <leader>9 <Plug>BuffetSwitch(9)
+nmap <leader>0 <Plug>BuffetSwitch(10)
+noremap <Tab> :bn<CR>
+noremap <S-Tab> :bp<CR>
+noremap <Leader><Tab> :Bw<CR>
+noremap <Leader><S-Tab> :Bw!<CR>
+noremap <C-t> :tabnew split<CR>
+
 " ----------------------------------------------------------------------------
 " -- leader mappings ---------------------------------------------------------
 " ----------------------------------------------------------------------------
 
 " -- file --------------------------------------------------------------------
-nnoremap <Leader>sfh :Netrwhist<cr>
+nnoremap - :Dirvish<cr>
+nnoremap _ :Sexplore<cr>

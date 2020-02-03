@@ -376,3 +376,22 @@ let g:mkdp_markdown_css = '/home/gideon/.config/nvim/static/markdown-preview/cus
 " Trick plugin into hosting colors.css so we get nice themes
 let g:mkdp_highlight_css = '/home/gideon/.cache/wal/colors.css'
 let g:mkdp_port = '3456'
+
+""""""""""
+" Buffet "
+""""""""""
+let g:buffet_always_show_tabline = 1
+let g:buffet_powerline_separators = 1
+let g:buffet_show_index = 0
+let g:buffet_use_devicons = 1
+let g:buffet_tab_icon = "\uf00a"
+let g:buffet_left_trunc_icon = "\uf0a8"
+let g:buffet_right_trunc_icon = "\uf0a9"
+
+"""""""""""
+" Dirvish "
+"""""""""""
+let g:loaded_netrwPlugin = 1
+command! -nargs=? -complete=dir Explore Dirvish <args>
+command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
+command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
