@@ -22,7 +22,7 @@
 - ✈️ Informative statusline and tabline with [vim-airline](https://github.com/vim-airline/vim-airline)
 - ✂️ Code snippets powered by [UltiSnips](https://github.com/sirver/UltiSnips)
 - 💡 Intelligent suggestions with [vim-tabnine](https://github.com/zxqfl/tabnine-vim)
-- 📁 Simple file browsing with [NERDTree](https://github.com/scrooloose/nerdtree)
+- 📁 Simple file browsing with [Netrw](https://www.vim.org/scripts/script.php?script_id=1075)
 - 📜 Dynamic homepage with [vim-startify](https://github.com/mhinz/vim-startify)
 - 🔎 Distraction free writing with [Goyo](https://github.com/junegunn/goyo.vim)
 - 🔧 Easily configfurable to suit your needs
@@ -195,13 +195,9 @@ In the middle of a word, you can press `Tab` to open the Coc floating completion
 </p>
 Note: Windows are set to the background color because the other colors look gross IMO. Ideally we could have a border on the floating windows but that is not implemented in CoC yet.
 
-## NERDTree
+## Netrw
 
-In any buffer, press `F7` to open the NERDTree file browser. Optionally disable the `nerdtree-highlights` plugin if you don't want syntax highlighting in NT.
-
-<p align="center">
-  <img src="https://gideonwolfe.com/img/neovim/reaper/nerdtree.png" width="640" height="360" title="nerdtree">
-</p>
+Be a man.
 
 ## Airline
 
@@ -248,16 +244,6 @@ LazyGit and LazyDocker give you a convenient TUI portal to your current git repo
   <img src="https://gideonwolfe.com/img/neovim/reaper/lazydocker.png" width="640" height="360" title="lazydocker">
 </p>
 
-## Translator
-
-By default I set the target language to french. This option is configurable in the plugin-settings, plus a ton of other options for that plugin I'm not even using at the moment.
-
-Here's what it looks like if you translate a phrase to a window with `<Leader>tw`.
-
-<p align="center">
-  <img src="https://gideonwolfe.com/img/neovim/reaper/translate.png" title="translator">
-</p>
-
 ## Markdown
 
 While editing a markdown document, press `<Leader>md` to open a live preview of your document. You must edit the plugin settings to point to the absolute filepath of the `css` file. This shoud just mean changing the username.
@@ -275,8 +261,6 @@ While editing a LaTeX document, press `<Leader>lc` to start automatic compilatio
 <p align="center">
   <img src="https://gideonwolfe.com/img/neovim/reaper/latex.png" title="latex">
 </p>
-
-use [zathura pywal](https://github.com/GideonWolfe/Zathura-Pywal) for the most cohesive theme!
 
 # Required tools
 
