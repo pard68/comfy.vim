@@ -39,9 +39,10 @@
 
 # Installation
 
-The `update_config.sh` script simply copies the `nvim` folder into your `$HOME/.config` directory. This script can also be used to update configurations that you have modified or have been updated from git.
+Ensure that GNU's `stow` is installed, and then just run `make install`. This will create the needed symlink
+in `~/.config/nvim` to link this repo to where the config is expected.
 
-Before installing for the first time, go into the `comfy.vim/nvim` directory and run `nvim -u init.vim`. This will tell neovim to launch using this configuration file. This lets you fully get everything up and running before you commit to puting it in `.config`. Back up any old configs!
+Before installing for the first time, go into the `comfy.vim/nvim/.config/nvim` directory and run `nvim -u init.vim`. This will tell neovim to launch using this configuration file. This lets you fully get everything up and running before you commit to puting it in `.config`. Back up any old configs!
 
 # Usage
 
