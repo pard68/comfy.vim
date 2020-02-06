@@ -66,6 +66,8 @@ Plug 'bounceme/remote-viewer'
 Plug 'kristijanhusak/vim-dirvish-git'
 "Plug 'fsharpasharp/vim-dirvinist'
 
+Plug 'chrisbra/Recover.vim'
+
 
 "-----------------------------------------------------------------------------
 "-- git ----------------------------------------------------------------------
