@@ -46,12 +46,19 @@ let g:vimtex_compiler_latexmk = {
 """""""""""
 " Goyo    "
 """""""""""
-nmap <F6> :Goyo<CR>
+nmap <leader>wg :Goyo<CR>
 
 
-"""""""""""
+""""""""""""""""
+" Limelight    "
+""""""""""""""""
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+
+
+""""""""""
 " Vista  "
-"""""""""""
+""""""""""
 let g:vista_executive_for = {
       \ 'c': 'coc',
       \ }
@@ -391,7 +398,9 @@ let g:buffet_right_trunc_icon = "\uf0a9"
 """""""""""
 " Dirvish "
 """""""""""
-" let g:loaded_netrwPlugin = 1
-" command! -nargs=? -complete=dir Explore Dirvish <args>
-" command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
-" command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
+let g:loaded_netrwPlugin = 1
+command! -nargs=? -complete=dir Explore Dirvish <args>
+command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
+command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
+
+

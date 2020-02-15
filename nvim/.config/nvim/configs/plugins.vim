@@ -49,8 +49,13 @@ Plug 'sainnhe/vim-color-forest-night'
 " Add DevIcons
 Plug 'ryanoasis/vim-devicons'
 
+" Window Tiling
+Plug 'zhamlin/tiler.vim'
+
+" The below is for "writing" mode
 " goyo distraction free mode
 Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 
 
 "-----------------------------------------------------------------------------
@@ -83,9 +88,6 @@ Plug 'tpope/vim-rhubarb'
 " Comfy scroll
 Plug 'yuttie/comfortable-motion.vim'
 
-" tmux.conf syntax highlighting and other such goodies
-Plug 'tmux-plugins/vim-tmux'
-
 " Vim Surround
 Plug 'tpope/vim-surround'
 
@@ -109,6 +111,17 @@ Plug 'tpope/vim-unimpaired'
 
 Plug 'bagrat/vim-buffet'
 
+" Seemless navigation between vim and tmux
+Plug 'christoomey/vim-tmux-navigator'
+
+" vim chords
+
+" Leader Guide, like emacs' guide
+" https://github.com/hecal3/vim-leader-guide
+" This is a wip, going to require a sit-down to review
+" keymappings and register them with this plugin.
+"Plug 'hecal3/vim-leader-guide'
+
 "-----------------------------------------------------------------------------
 "-- syntax -------------------------------------------------------------------
 "-----------------------------------------------------------------------------
@@ -124,6 +137,9 @@ Plug 'sheerun/vim-polyglot'
 " LaTeX support
 Plug 'lervag/vimtex'
 
+" tmux.conf syntax highlighting and other such goodies
+Plug 'tmux-plugins/vim-tmux'
+
 " Tmuxline.vim, sync tmux and vim lines
 Plug 'edkolev/tmuxline.vim'
 
@@ -134,6 +150,11 @@ Plug 'Yggdroot/indentLine'
 Plug 'godlygeek/tabular'
 
 Plug 'tpope/vim-repeat'
+
+Plug 'tommcdo/vim-exchange'
+
+" Go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 
 "-----------------------------------------------------------------------------

@@ -203,10 +203,39 @@ noremap <Leader><Tab> :Bw<CR>
 noremap <Leader><S-Tab> :Bw!<CR>
 noremap <C-t> :tabnew split<CR>
 
+" tiler
+nmap <C-W>n <plug>TilerNew
+nmap <C-W>c <plug>TilerClose
+nmap <C-W>. <plug>TilerRotateForwards
+nmap <C-W>, <plug>TilerRotateBackwards
+
+nmap <C-w><space> <Plug>TilerZoom
+nmap <C-Space> <Plug>TilerFocus
+
+nmap <C-W>k <Plug>TilerAddMaster
+nmap <C-W>j <Plug>TilerDelMaster
+nmap <C-W>l <Plug>TilerRotateLayoutR
+nmap <C-W>h <Plug>TilerRotateLayoutL
+
 " ----------------------------------------------------------------------------
 " -- leader mappings ---------------------------------------------------------
 " ----------------------------------------------------------------------------
 
 " -- file --------------------------------------------------------------------
-" nnoremap - :Dirvish<cr>
-nnoremap _ :Sexplore<cr>
+augroup dirvish_config
+  autocmd!
+  " Map `t` to open in new tab.
+  autocmd FileType dirvish
+    \  nnoremap <silent><buffer> t :call dirvish#open('tabedit', 0)<CR>
+    \ |xnoremap <silent><buffer> t :call dirvish#open('tabedit', 0)<CR>
+
+  " Map `gr` to reload.
+  autocmd FileType dirvish nnoremap <silent><buffer>
+    \ gr :<C-U>Dirvish %<CR>
+
+  " Map `gh` to hide dot-prefixed files.  Press `R` to "toggle" (reload).
+  autocmd FileType dirvish nnoremap <silent><buffer>
+    \ gh :silent keeppatterns g@\v/\.[^\/]+/?$@d _<cr>:setl cole=3<cr>
+augroup END
+
+
