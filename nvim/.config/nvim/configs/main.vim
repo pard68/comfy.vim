@@ -9,15 +9,17 @@
 
 
 
-" Colorscheme
-colorscheme forest-night
-
 " Set truecolors to work properly with tmux
 if exists('+termguicolors')
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
+
+" Colorscheme
+let g:forest_night_transparent_background = 1
+colorscheme forest-night
+
 
 augroup specify_filetype
     autocmd!
@@ -88,13 +90,13 @@ set showmatch
 set backupskip=/tmp/*,/private/tmp/*"
 
 " Store backup files in one place.
-set backupdir^=$HOME/.config/nvim//storage/backups//
+set backupdir^=$HOME/.local/share/nvim/backups/
 
 " Store swap files in one place.
-set dir^=$HOME/.config/nvim//storage/swaps//
+set dir^=$HOME/.local/share/nvim/backups/swap/
 
 " Store undo files in one place.
-set undodir^=$HOME/.config/nvim/storage/undos//
+set undodir^=$HOME/.local/share/nvim/backups/undos/
 
 " line wrapping
 set wrap

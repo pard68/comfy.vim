@@ -66,25 +66,25 @@
  "java.home": "/usr/lib/jvm/java-13-openjdk/",
  "eslint.trace.server": "verbose",
  "languageserver": {
-   "ccls": {
-     "command": "ccls",
-     "filetypes": [
-       "c",
-       "cpp",
-       "objc",
-       "objcpp"],
-     "rootPatterns": [
-       ".ccls",
-       "compile_commands.json",
-       ".vim/",
-       ".git/",
-       ".hg/"],
-     "initializationOptions": {
-        "cache": {
-          "directory": "/tmp/ccls"
-        }
-     }
-    }
+  // "ccls": {
+  //   "command": "ccls",
+  //   "filetypes": [
+  //     "c",
+  //     "cpp",
+  //     "objc",
+  //     "objcpp"],
+  //   "rootPatterns": [
+  //     ".ccls",
+  //     "compile_commands.json",
+  //     ".vim/",
+  //     ".git/",
+  //     ".hg/"],
+  //   "initializationOptions": {
+  //      "cache": {
+  //        "directory": "/tmp/ccls"
+  //      }
+  //   }
+  //  }
   },
   "java.errors.incompleteClasspath.severity": "ignore",
   //cSpell
@@ -97,6 +97,11 @@
   "cSpell.userWords": [
     "chonmag"
   ],
+  //python
+  "python.formatting.provider": "black",
+  "python.jediEnabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true
 
 
 }

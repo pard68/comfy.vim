@@ -46,7 +46,6 @@ let g:vimtex_compiler_latexmk = {
 """""""""""
 " Goyo    "
 """""""""""
-nmap <leader>wg :Goyo<CR>
 
 
 """"""""""""""""
@@ -143,8 +142,6 @@ let g:DevIconsDefaultFolderOpenSymbol = ''
 """""""""""""""""
 "Comfy-Scroll   "
 """""""""""""""""
-noremap <silent> <ScrollWheelDown> :call comfortable_motion#flick(40)<CR>
-noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-40)<CR>
 let g:comfortable_motion_friction = 50.0
 let g:comfortable_motion_air_drag = 1.0
 
@@ -254,7 +251,7 @@ hi! PmenuSel ctermbg=0
 " Brighter line numbers
 hi! LineNr ctermfg=NONE guibg=NONE
 
-" KEY REMAPS ""
+" KEY REMAPS
 set updatetime=300
 let g:ycm_server_python_interpreter = '/usr/bin/python3'
 let g:coc_snippet_next = '<TAB>'
@@ -268,7 +265,6 @@ let g:coc_global_extensions = [
       \'coc-html', 
       \'coc-xml', 
       \'coc-java', 
-      \'coc-ccls', 
       \'coc-powershell', 
       \'coc-r-lsp', 
       \'coc-vimlsp', 
@@ -325,11 +321,6 @@ set signcolumn=yes
 """""""""""""
 "coc-smartf "
 """""""""""""
-nmap f <Plug>(coc-smartf-forward)
-nmap F <Plug>(coc-smartf-backward)
-nmap ; <Plug>(coc-smartf-repeat)
-nmap , <Plug>(coc-smartf-repeat-opposite)
-
 augroup Smartf
   autocmd User SmartfEnter :hi Conceal ctermfg=220 guifg=#6638F0
   autocmd User SmartfLeave :hi Conceal ctermfg=239 guifg=#504945
@@ -354,11 +345,11 @@ let g:fzf_colors =
 \ 'spinner': ['fg', 'Label'],
 \ 'header':  ['fg', 'Comment'] }
 
-" Hide status bar while using fzf commands                                                                          
-if has('nvim') || has('gui_running')                                                                                
-  autocmd! FileType fzf                                                                                             
-  autocmd  FileType fzf set laststatus=0 | autocmd WinLeave <buffer> set laststatus=2                               
-endif    
+" Hide status bar while using fzf commands
+if has('nvim') || has('gui_running')
+  autocmd! FileType fzf
+  autocmd  FileType fzf set laststatus=0 | autocmd WinLeave <buffer> set laststatus=2
+endif
 
 " Centered floating window for fzf
 let g:fzf_layout = { 'window': 'call CreateCenteredFloatingWindow()' }

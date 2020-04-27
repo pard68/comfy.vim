@@ -238,4 +238,19 @@ augroup dirvish_config
     \ gh :silent keeppatterns g@\v/\.[^\/]+/?$@d _<cr>:setl cole=3<cr>
 augroup END
 
+nnoremap <leader>ff :Files!<CR>
+nnoremap <leader>fl :BLines!<CR>
+nnoremap <leader>fc :BCommits!<CR>
 
+nmap <leader>wg :Goyo<CR>
+
+nmap f <Plug>(coc-smartf-forward)
+nmap F <Plug>(coc-smartf-backward)
+nmap ; <Plug>(coc-smartf-repeat)
+nmap , <Plug>(coc-smartf-repeat-opposite)
+
+"""""""""""""""""
+"Comfy-Scroll   "
+"""""""""""""""""
+noremap <silent> <ScrollWheelDown> :call comfortable_motion#flick(40)<CR>
+noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-40)<CR>
