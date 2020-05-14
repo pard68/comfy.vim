@@ -238,6 +238,7 @@ augroup dirvish_config
     \ gh :silent keeppatterns g@\v/\.[^\/]+/?$@d _<cr>:setl cole=3<cr>
 augroup END
 
+nnoremap <leader>f :Rg!<CR>
 nnoremap <leader>ff :Files!<CR>
 nnoremap <leader>fl :BLines!<CR>
 nnoremap <leader>fc :BCommits!<CR>
