@@ -165,7 +165,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'vimwiki/vimwiki'
 
  " todo addon for vimwiki
-" Plug 'tbabej/taskwiki'
+Plug 'tbabej/taskwiki'
 
  " Color support for charts
 Plug 'powerman/vim-plugin-AnsiEsc'
@@ -174,7 +174,7 @@ Plug 'powerman/vim-plugin-AnsiEsc'
 Plug 'majutsushi/tagbar'
 
  " taskwarrior support for vimwiki
-" Plug 'farseer90718/vim-taskwarrior'
+Plug 'farseer90718/vim-taskwarrior'
 
 
 call plug#end()
