@@ -167,14 +167,14 @@ Plug 'vimwiki/vimwiki'
  " todo addon for vimwiki
 Plug 'tbabej/taskwiki'
 
+ " taskwarrior support for vimwiki
+Plug 'farseer90718/vim-taskwarrior'
+
  " Color support for charts
 Plug 'powerman/vim-plugin-AnsiEsc'
 
  " taskwiki file navigation
 Plug 'majutsushi/tagbar'
-
- " taskwarrior support for vimwiki
-Plug 'farseer90718/vim-taskwarrior'
 
 
 call plug#end()
