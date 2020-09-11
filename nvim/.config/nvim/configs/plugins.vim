@@ -44,7 +44,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " forest night theme
-Plug 'sainnhe/vim-color-forest-night'
+"Plug 'sainnhe/vim-color-forest-night'
+
+" nord theme
+Plug 'arcticicestudio/nord-vim'
 
 " Add DevIcons
 Plug 'ryanoasis/vim-devicons'
@@ -135,6 +138,9 @@ Plug 'ap/vim-css-color'
 " Language Packs
 Plug 'sheerun/vim-polyglot'
 
+" Love2d
+Plug 'davisdude/vim-love-docs'
+
 " LaTeX support
 Plug 'lervag/vimtex'
 
@@ -162,7 +168,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 "-- vimwiki ------------------------------------------------------------------
 "-----------------------------------------------------------------------------
  " A personal wiki for Vim
-Plug 'vimwiki/vimwiki'
+Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
 
  " todo addon for vimwiki
 Plug 'tbabej/taskwiki'
@@ -176,5 +182,20 @@ Plug 'powerman/vim-plugin-AnsiEsc'
  " taskwiki file navigation
 Plug 'majutsushi/tagbar'
 
+
+"-----------------------------------------------------------------------------
+"-- calendar------------------------------------------------------------------
+"-----------------------------------------------------------------------------
+"calendar.vim
+Plug 'itchyny/calendar.vim'
+
+Plug 'metakirby5/codi.vim'
+
+
+"-----------------------------------------------------------------------------
+"-- budget -------------------------------------------------------------------
+"-----------------------------------------------------------------------------
+"beancount
+Plug 'ledger/vim-ledger'
 
 call plug#end()

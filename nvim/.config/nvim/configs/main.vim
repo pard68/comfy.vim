@@ -17,8 +17,9 @@ if exists('+termguicolors')
 endif
 
 " Colorscheme
-let g:forest_night_transparent_background = 1
-colorscheme forest-night
+"let g:forest_night_transparent_background = 1
+let g:nord_cursor_line_number_background = 1
+colorscheme nord
 
 
 augroup specify_filetype
