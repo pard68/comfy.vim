@@ -102,7 +102,7 @@ Plug 'tpope/vim-obsession'
 Plug 'junegunn/vim-peekaboo'
 
 " Markdown Preview
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+"Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
 " Comment quickly
 Plug 'tpope/vim-commentary'

@@ -395,3 +395,8 @@ command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args
 command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
 
 
+"""""""""""
+" Vimwiki "
+"""""""""""
+" don't treat every md file as a temp wiki
+let g:vimwiki_global_ext = 0
