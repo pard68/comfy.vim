@@ -28,6 +28,7 @@ Plug 'jiangmiao/auto-pairs'
 
 " COC
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 
 " Emoji support
 Plug 'junegunn/vim-emoji'
@@ -142,7 +143,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'davisdude/vim-love-docs'
 
 " LaTeX support
-Plug 'lervag/vimtex'
+"Plug 'lervag/vimtex'
 
 " tmux.conf syntax highlighting and other such goodies
 Plug 'tmux-plugins/vim-tmux'

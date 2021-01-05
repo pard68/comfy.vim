@@ -10,7 +10,7 @@
 """""""""""""""
 " Vim polyglot"
 """""""""""""""
-let g:polyglot_disabled = ['latex']
+"let g:polyglot_disabled = ['latex']
 
 
 """""""""""""""
@@ -265,8 +265,6 @@ let g:coc_global_extensions = [
       \'coc-html', 
       \'coc-xml', 
       \'coc-java', 
-      \'coc-powershell', 
-      \'coc-r-lsp', 
       \'coc-vimlsp', 
       \'coc-lua', 
       \'coc-sql', 
@@ -279,7 +277,6 @@ let g:coc_global_extensions = [
       \'coc-emmet',
       \'coc-tsserver',
       \'coc-translator',
-      \'coc-fish',
       \'coc-docker',
       \'coc-pairs',
       \'coc-json',
@@ -296,7 +293,6 @@ let g:coc_global_extensions = [
       \'coc-yaml',
       \'coc-template',
       \'coc-tabnine',
-      \'coc-utils'
       \]
 
 augroup MyAutoCmd
